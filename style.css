@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+.container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 12rem;
+}
+.title{
+    font-size: 10rem;
+    color: #084C61;
+    font-family: Kanit;
+}
+.game{
+    width: 30%;
+    height: 95%;
+    border: 1rem solid black;
+    border-radius: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+button{
+    width: 12rem;
+    height: 5rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+    background-color: #4F6D7A;
+    color: antiquewhite;
+    border: 0.5rem solid #084C61;
+    &:hover{
+        width: 11rem;
+        height: 4.8rem;
+        color: #E3B505;
+    }
+}
+.btns{
+    display: flex;
+    gap: 3rem;
+    
+}
+.option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    
+}
+.opt{
+    width: 10rem;
+    aspect-ratio: 1;
+    background-color: #DB504A;
+    font-size: 2rem;
+    font-family: Kanit;
+    border: none;
+    color: #000000;
+    border-radius: 1rem;
+    transition: all ease-in 100ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover{
+        width: 9.5rem;
+        aspect-ratio: 1;
+        color: #E3B505;
+    }
+}
+
+.scoredisp{
+    font-size: 4rem;
+    font-family: Kanit;
+
+    .display{
+        width: 21rem;
+        height: 10rem;
+        /* background-color: #DB504A; */
+        display:flex ;
+        gap: 0.5rem;
+
+        .score{
+            width: 10rem;
+            height: 10rem;
+            border-radius: 1rem;
+            
+            &.bot{
+                background-color: #084C61;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 5rem;
+                padding-top: 1rem;
+                
+                &::after{
+                    content: "BOT";
+                    width: 10rem;
+                    position: absolute;
+                    top: 0;
+                    color: antiquewhite;
+                    text-align: center;
+                    font-size: 2rem;
+                    font-weight: bold;
+                }
+            }
+            &.player{
+                background-color: #E3B505;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 5rem;
+                padding-top: 1rem;
+                &::after{
+                    content: "PLAYER";
+                    width: 10rem;
+                    position: absolute;
+                    top: 0;
+                    color: black;
+                    text-align: center;
+                    font-size: 2rem;
+                    
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+.msg{
+    font-family: Kanit;
+    font-size: 2rem;
+}
